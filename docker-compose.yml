@@ -2,7 +2,7 @@ version: "3.7"
 services:
   postgres96-server:
     build: .
-    image: postgres96
+    image: carlosamorim/postgres96
     container_name: postgres96-server
     #network_mode: net_sps
     network_mode: bridge
@@ -16,6 +16,6 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     volumes:
-      - /home/carlos/data:/var/lib/postgresql/data
+      - /home/carlos/pgdata/data84:/var/lib/postgresql/data
     entrypoint: ["/var/lib/postgresql/entry-point.sh"]
     command: -p 5433
