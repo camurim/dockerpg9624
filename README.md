@@ -18,6 +18,7 @@ make install
 mkdir -p /home/user/data
 cd /home/user/usr/postgresql96/bin
 ./initdb -D ~/data/ -U postgres
+```
 
 ### Alterar o password padrão do PostgreSQL
 
